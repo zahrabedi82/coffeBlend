@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Blend | Modern Café Experience</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">☕ Coffee<span>Blend</span></div>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#story">Story</a></li>
+          </ul>
+          <div class="cart-icon" id="cartIcon">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Artisan roasts, <br /><i>smooth blends</i> & daily joy
+            </h1>
+            <p class="hero-desc">
+              Experience the finest ethically sourced beans, handcrafted brews,
+              and a cozy atmosphere. Order online & enjoy barista-level coffee
+              at home.
+            </p>
+            <a href="#menu" class="btn"
+              >Explore Menu <i class="fas fa-arrow-right"></i
+            ></a>
+            <a
+              href="#"
+              id="heroOrderBtn"
+              class="btn btn-outline"
+              style="margin-left: 16px"
+              >Order Now</a
+            >
+          </div>
+          <div class="hero-image">
+            <img src="./image/images/about.jpg" alt="coffee hero" />
+          </div>
+        </div>
+      </section>
+
+      <div class="container" id="menu">
+        <h2 class="section-title">Our signature selection</h2>
+        <p class="section-sub">
+          Freshly roasted • Made with love • Direct trade
+        </p>
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+
+      <section id="story" class="container story-section">
+        <div class="story-wrapper">
+          <div class="story-img">
+            <img src="./image/images/bg_2.jpg" alt="coffee story" />
+          </div>
+          <div class="story-text">
+            <h2>From Bean to Cup</h2>
+            <p>
+              Since 2012, Coffee Blend has been curating small-lot roasts from
+              Colombia, Ethiopia, and Sumatra. Our mission is to honor the
+              craft, empower farmers, and give you the perfect brew every
+              morning.
+            </p>
+            <i class="fas fa-heart" style="color: #b66e3a"></i>
+            <span>100% sustainable</span>
+          </div>
+        </div>
+      </section>
+      <section class="container cafe-gallery">
+        <h2 class="section-title">Coffee Moments</h2>
+        <p class="section-sub">A warm vibe, fresh aroma, and perfect pours</p>
+
+        <div class="gallery-grid">
+          <img src="./image/images/bg_3.jpg" />
+
+          <img src="./image/images/bg_1.jpg" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p><i class="fas fa-mug-hot"></i> Coffee Blend — Sip the moment</p>
+        <p>
+          © 2025 | Modern Café Experience | Secure payments powered by Stripe
+          (demo)
+        </p>
+      </div>
+    </footer>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="card-header">
+        <h3>Your Order</h3>
+        <button class="close-cart" id="closeCartBtn">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItemsList"></div>
+      <div class="cart-total" id="cartTotalPrice">Total: $0.00</div>
+      <button class="checkout-btn" id="checkoutBtn">
+        Proceed to Payment ➤
+      </button>
+    </div>
+    <div class="Payment-modal" id="PaymentModal">
+      <h3>💳 Payment Gateway</h3>
+      <p>🔒 Demo card: 4242 4242 4242 4242<br />Any future date / CVV</p>
+      <input
+        type="text"
+        placeholder="Card Number"
+        class="payment-input"
+        id="cardNumber"
+        value="4242 4242 4242 4242"
+      />
+      <input
+        type="text"
+        placeholder="MM/YY"
+        class="payment-input"
+        id="expiry"
+        value="12/28"
+      />
+      <input
+        type="text"
+        placeholder="CVC"
+        class="payment-input"
+        id="cvc"
+        value="123"
+      />
+      <button id="confirmPaymentBtn" class="btn pay-now">
+        Pay & Confirm Order
+      </button>
+      <div id="paymentInfo" class="payment-message"></div>
+      <button id="closePaymentBtn" class="cancel-btn">Cancel</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
