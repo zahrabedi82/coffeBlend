@@ -22,7 +22,8 @@ A modern and responsive coffee shop website built with **HTML, CSS, and JavaScri
 
 ## 📸 Preview
 
-![Preview](./screenshot.png)
+<img width="1313" height="543" alt="image" src="https://github.com/user-attachments/assets/c926a4a1-8fda-443a-8c9a-52467769b2b1" />
+
 
 ## 🚀 Getting Started
 
